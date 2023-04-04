@@ -14,33 +14,33 @@ function MovieList() {
 
   return (
     <>
-          <div className="row">
+    <div className="row">
         <h4>The Movies</h4>
-      </div>
-          <table className="table table-striped table-dark" style={{ marginLeft: "50px", marginRight: "50px" }}>
-        <thead className="thead-light">
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Year</th>
-            <th>Director</th>
-            <th>Rating</th>
-            <th>Edited</th>
-          </tr>
-        </thead>
-        <tbody>
-          {movieData.map((m) => (
-            <tr key={m.movieId}>
-              <td>{m.title}</td>
-            <td>{m.category}</td>
-            <td>{m.year}</td>
-              <td>{m.director}</td>
-              <td>{m.rating}</td>
-              <td>{m.edited}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    </div>
+        <table className="table table-striped table-dark mx-auto" style={{width:"750px" }}>
+            <thead className="thead-light">
+              <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th>Edited</th>
+              </tr>
+            </thead>
+            <tbody>
+              {movieData.map((m) => (
+                <tr key={m.movieId}>
+                  <td>{m.title}</td>
+                <td>{m.category}</td>
+                <td>{m.year}</td>
+                  <td>{m.director}</td>
+                  <td>{m.rating}</td>
+                  <td>{m.edited}</td>
+                </tr>
+              ))}
+            </tbody>
+              </table>
     </>
   );
 }
