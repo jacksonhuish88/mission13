@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MyHeader from "./myHeader";
-import MovieList from "./Movies";
+// import MovieList from "./Movies";
+import MovieList from "./Movie/MovieList";
 import Home from "./Home";
 import Podcasts from "./Podcasts";
 
